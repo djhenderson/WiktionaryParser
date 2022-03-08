@@ -43,7 +43,7 @@ class WiktionaryParser(object):
         self.RELATIONS = copy(RELATIONS)
         self.INCLUDED_ITEMS = self.RELATIONS + self.PARTS_OF_SPEECH + ['etymology', 'pronunciation']
 
-    def close():
+    def close(self):
         if self.session:
             self.session.close()
 
